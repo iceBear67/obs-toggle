@@ -1,0 +1,6 @@
+{
+  "screen.obstoggle.waiting": "Waiting response from OBS...",
+  "screen.obstoggle.fail": "Cannot connect to OBS.",
+  "screen.obstoggle.back": "Go Back",
+  "screen.obstoggle.hint": "Calling OBS"
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "obstoggle",
+  "version": "${version}",
+  "name": "OBS Toggler",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/icebear67/obs-toggle"
+  },
+  "license": "GPL-3.0",
+  "environment": "*",
+  "mixins": [
+    "obs-toggle.mixins.json"
+  ],
+  "entrypoints": {
+    "modmenu": ["io.ib67.obstoggle.ModMenuInit"],
+    "main": ["io.ib67.obstoggle.OBSToggle"]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
