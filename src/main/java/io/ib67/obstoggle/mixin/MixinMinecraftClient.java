@@ -37,7 +37,6 @@ public abstract class MixinMinecraftClient {
             var controller = OBSToggle.getInstance().getObsRemoteController();
             info.cancel();
             var state = new AtomicBoolean(false);
-            Consumer<Object> callback = any -> state.set(true);
             if (open) {
                 setScreen(new OBSWaitScreen(incomingScreen,state, true));
                 controller.pauseRecord(any -> state.set(true));
